@@ -1,8 +1,8 @@
-#1. Create project using maven command
+# 1. Create project using maven command
 ```
 mvn archetype:generate -DgroupId=th.ac.kmitl.it.oot.hibernate -DartifactId=MyHibernate -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
-###Note!!
+### Note!!
 ```DgroupId``` is your package name. Package names are written in all lower case to avoid conflict with the names of classes or interfaces.
 
 Companies use their reversed Internet domain name to begin their package names—for example, com.example.mypackage for a package named mypackage created by a programmer at example.com.
@@ -23,7 +23,7 @@ In some cases, the internet domain name may not be a valid package name. This ca
 
 ```DarchetypeArtifactId``` is type of application. We use ```maven-archetype-quickstart``` to create basic application, and code structure. You can study more about this at [https://maven.apache.org/guides/introduction/introduction-to-archetypes.html]()
 
-#2. Add plugin for run application
+# 2. Add plugin for run application
 You can compile/build your application using command as follow.
 
 ```
@@ -71,7 +71,7 @@ mvn exec:java
 !Note, If you update your application. You still need to run ```mvn package``` before run application.
 
 
-#3. Add hibernate to your application
+# 3. Add hibernate to your application
 Edit ```pom.xml```. By add this follow xml into your dependencies section.
 
 ```xml
@@ -87,7 +87,7 @@ Edit ```pom.xml```. By add this follow xml into your dependencies section.
 * You can find external dependencies at [https://mvnrepository.com/]()
 * Version number can change.
 
-#4. SQLite connect libarary to your application
+# 4. SQLite connect libarary to your application
 
 ```xml
 <dependency>
@@ -97,7 +97,7 @@ Edit ```pom.xml```. By add this follow xml into your dependencies section.
 </dependency>
 ```
 
-#5. Make config to connect between hibernate and sqlite
+# 5. Make config to connect between hibernate and sqlite
 
 * Create ```SQLiteDialect.java``` under folder ```src/main/org/hibernate/dialect```. This is java for SQLite
 
@@ -408,5 +408,5 @@ public class Contact {
 ```
 * Form ```hibernate.cfg.xml```. ```mydb.db``` is your sqlite database file. And ```<mapping class="th.ac.kmitl.it.oot.hibernate.Contact"/>``` is tell that ```Contact.java``` is object that response to database table.
 
-#6. Write application to test hibernate and SQLite
+# 6. Write application to test hibernate and SQLite
 
