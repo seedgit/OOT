@@ -99,7 +99,7 @@ Edit ```pom.xml```. By add this follow xml into your dependencies section.
 
 # 5. Make config to connect between hibernate and sqlite
 
-* Create ```SQLiteDialect.java``` under folder ```src/main/org/hibernate/dialect```. This is java for SQLite
+* Create ```SQLiteDialect.java``` under folder ```src/main/java/org/hibernate/dialect```. This is java for SQLite
 
 ```java
 /*
