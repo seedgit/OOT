@@ -384,7 +384,7 @@ public class Contact {
 }
 
 ```
-* In main ```src/main``` create folder name ```resources```. Then create ```hibernate.cfg.xml```. Your path of this file should be ```src/main/hibernate.cfg.xml```
+* In main ```src/main``` create folder name ```resources```. Then create ```hibernate.cfg.xml```. Your path of this file should be ```src/main/resources/hibernate.cfg.xml```
 * Edit hibernate.cfg.xml as follow
 
 ```xml
