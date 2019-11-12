@@ -410,3 +410,14 @@ public class Contact {
 
 # 6. Write application to test hibernate and SQLite
 
+
+
+
+mvn archetype:generate                                  \
+  -DarchetypeGroupId=th.ac.kmitl.it.oot               \
+  -DarchetypeArtifactId=maven-archetype-webapp          \
+  -DgroupId=<my.groupid>                                \
+  -DartifactId=MotorCycle
+
+
+mvn archetype:generate -DgroupId=th.ac.kmitl.it.oot -DartifactId=MotorCycle -DarchetypeArtifactId=maven-archetype-webapp
