@@ -5,6 +5,9 @@
 <div class="card">
     <div class="card-body">
         <s:a class="btn btn-sm btn-primary float-right mb-2" action="brand"><i class="fas fa-plus"></i> Add</s:a>
+        <s:property value="brands"/>
+        
+            
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
@@ -15,11 +18,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <s:iterator value="brands" status="brand">
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td><s:property value="id"/></td>
+                        <td><s:property value="name"/></td>
                         <td></td>
                     </tr>
+                    </s:iterator>
                 </tbody>
             </table>
         </div>
