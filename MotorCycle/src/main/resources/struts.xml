@@ -15,6 +15,12 @@
         <action name="brandList" class="th.ac.kmitl.it.oot.motorcycle.view.BrandListAction" method="execute">
             <result name="success">/jsp/brand-list.jsp</result>
         </action>
+        <action name="brand" class="th.ac.kmitl.it.oot.motorcycle.view.BrandAction" method="execute">
+            <result name="success">/jsp/brand-form.jsp</result>
+        </action>
+        <action name="brandEdit" class="th.ac.kmitl.it.oot.motorcycle.view.BrandAction" method="execute">
+            <result name="success">/jsp/brand-form.jsp</result>
+        </action>
         <action name="brandAdd" class="th.ac.kmitl.it.oot.motorcycle.view.BrandAddAction" method="execute">
             <result name="success">/jsp/brand-add.jsp</result>
         </action>

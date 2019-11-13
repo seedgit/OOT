@@ -16,7 +16,7 @@ public class Brand {
 		this.name = "Yamaha";
 	}
 	@Id
-	public Integer getId() {
+	public Integer getID() {
 		return this.id;
 	}
 
@@ -30,5 +30,8 @@ public class Brand {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String toString() {
+		return "ID:" + getID().toString() + ", Brand Name: " + getName();
 	}
 }

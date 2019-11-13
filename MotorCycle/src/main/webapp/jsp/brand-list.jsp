@@ -4,7 +4,7 @@
 <h1>Brand List</h1>
 <div class="card">
     <div class="card-body">
-        <s:a class="btn btn-sm btn-primary float-right mb-2" action="brandAdd"><i class="fas fa-plus"></i> Add</s:a>
+        <s:a class="btn btn-sm btn-primary float-right mb-2" action="brand"><i class="fas fa-plus"></i> Add</s:a>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
