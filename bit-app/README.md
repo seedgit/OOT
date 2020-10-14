@@ -3,6 +3,7 @@ cd bit-app
 mvn package
 
 java -cp target/bit-app-1.0-SNAPSHOT.jar th.ac.kmitl.it.www.App
+mvn exec:java -Dexec.mainClass=th.ac.kmitl.it.www.App
 
 add 
 <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
